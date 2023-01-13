@@ -1,3 +1,5 @@
+- reference: https://github.com/bradtraversy/50projects50days/tree/master/github-profiles
+
 GitHub API
 All API access is over HTTPS, and accessed from https://api.github.com. All data is sent and received as JSON.
 
