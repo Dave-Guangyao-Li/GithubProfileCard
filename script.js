@@ -58,7 +58,8 @@ const createErrorCard = (msg) => {
 const getRepos = async (username) => {
     try {
         const { data } = await axios.get(APIURL + username + "/repos?sort=created");
-        console.log(data);
+
+        addReposToCard(data);
     } catch (error) {
         createErrorCard("Problem fetching repos");
     }
