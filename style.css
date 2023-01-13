@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box; // this is to make sure that the padding and margin are not included in the width and height of the element
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #2a2a72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  /* 16px */
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  box-shadow: 0 0 10px rgba(154, 160, 185, 0.05),
+    0 5px 15px rgba(166, 173, 201, 0.2);
+}
+
+.user-form input::placeholder {
+  color: #bbb;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.card {
+  /* make it responsive */
+  max-width: 800px;
+  background-color: #4c2885;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(154, 160, 185, 0.05),
+    0 5px 15px rgba(166, 173, 201, 0.2);
+  display: flex;
+  padding: 3rem;
+  margin: 0, 1.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 10px solid #2a2a72;
+  height: 200px;
+  width: 200px;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-lef1t: 0.5rem;
+}
+
+.repo {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2a2a72;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  /* in case there are more than 1 repo */
+  margin-bottom: 0.5rem;
+}
+
+/* add responsive media query */
+@media (max-width: 500px) {
+  /* // when the screen is less than 500px */
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-form {
+    /* // make input it smaller on smaller screen */
+    max-width: 400px;
+  }
+}
