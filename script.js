@@ -31,9 +31,9 @@ const createUserCard = (user) => {
           <h2>${userID}</h2>
           <p>${userBio}</p>
           <ul>
-            <li>${user.followers} <strong>Followers</strong></li>
-            <li>${user.following}  <strong>Following</strong></li>
-            <li>${user.public_repos} <strong>Repos</strong></li>
+            <li>${user.followers} <strong> Followers</strong></li>
+            <li>${user.following}  <strong> Following</strong></li>
+            <li>${user.public_repos} <strong> Repos</strong></li>
           </ul>
 
           <div id="repos">
